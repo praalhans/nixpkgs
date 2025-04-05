@@ -19,11 +19,11 @@
 }:
 stdenv.mkDerivation (final: {
   pname = "quarto";
-  version = "1.6.33";
+  version = "1.6.43";
 
   src = fetchurl {
     url = "https://github.com/quarto-dev/quarto-cli/releases/download/v${final.version}/quarto-${final.version}-linux-amd64.tar.gz";
-    hash = "sha256-0qCQswtBC8R1Q7pHLhJtqCncllqgXo1t9pG97VwCtAI=";
+    hash = "sha256-9cwGPduP0BN0fNtMb8lklK5FftJMuuPaqCFRN8vL+cI=";
   };
 
   patches = [
@@ -99,7 +99,7 @@ stdenv.mkDerivation (final: {
     '';
     homepage = "https://quarto.org/";
     changelog = "https://github.com/quarto-dev/quarto-cli/releases/tag/v${version}";
-    license = licenses.gpl2Plus;
+    license = licenses.mit;
     maintainers = with maintainers; [
       minijackson
       mrtarantoga
