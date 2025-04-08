@@ -1,0 +1,123 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Manuals</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <p align="center"><a href="https://nixos.org"><picture>
+          <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/NixOS/nixos-homepage/main/public/logo/nixos-hires.png">
+          <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/NixOS/nixos-artwork/master/logo/nixos-white.png">
+          <img src="https://raw.githubusercontent.com/NixOS/nixos-homepage/main/public/logo/nixos-hires.png" width="500px" alt="NixOS logo">
+        </picture></a></p>
+    <p align="center">
+      <a href="CONTRIBUTING.md"><img src="https://img.shields.io/github/contributors-anon/NixOS/nixpkgs" alt="Contributors badge"></a>
+      <a href="https://opencollective.com/nixos"><img src="https://opencollective.com/nixos/tiers/supporter/badge.svg?label=supporters&#x26;color=brightgreen" alt="Open Collective supporters"></a>
+    </p>
+    <p>
+      <a href="https://github.com/nixos/nixpkgs">Nixpkgs</a> is a collection of over
+      100,000 software packages that can be installed with the
+      <a href="https://nixos.org/nix/">Nix</a> package manager. It also implements
+      <a href="https://nixos.org/nixos/">NixOS</a>, a purely-functional Linux distribution.
+    </p>
+    <section class="level1" aria-labelledby="manuals">
+      <h1 id="manuals">Manuals</h1>
+      <ul>
+        <li><a href="https://nixos.org/nixos/manual">NixOS Manual</a> - how to install, configure, and maintain a purely-functional Linux distribution</li>
+        <li><a href="https://nixos.org/nixpkgs/manual/">Nixpkgs Manual</a> - contributing to Nixpkgs and using programming-language-specific Nix expressions</li>
+        <li><a href="https://nixos.org/nix/manual">Nix Package Manager Manual</a> - how to write Nix expressions (programs), and how to use Nix command line tools</li>
+      </ul>
+    </section>
+    <section class="level1" aria-labelledby="community">
+      <h1 id="community">Community</h1>
+      <ul>
+        <li><a href="https://discourse.nixos.org/">Discourse Forum</a></li>
+        <li><a href="https://matrix.to/#/#space:nixos.org">Matrix Chat</a></li>
+        <li><a href="https://weekly.nixos.org/">NixOS Weekly</a></li>
+        <li><a href="https://wiki.nixos.org/">Official wiki</a></li>
+        <li><a href="https://wiki.nixos.org/wiki/Get_In_Touch#Chat">Community-maintained list of ways to get in touch</a> (Discord, Telegram, IRC, etc.)</li>
+      </ul>
+    </section>
+    <section class="level1" aria-labelledby="other-project-repositories">
+      <h1 id="other-project-repositories">Other Project Repositories</h1>
+      <p>
+        The sources of all official Nix-related projects are in the <a href="https://github.com/NixOS/">NixOS
+organization on GitHub</a>. Here are some of
+        the main ones:
+      </p>
+      <ul>
+        <li><a href="https://github.com/NixOS/nix">Nix</a> - the purely functional package manager</li>
+        <li><a href="https://github.com/NixOS/nixops">NixOps</a> - the tool to remotely deploy NixOS machines</li>
+        <li><a href="https://github.com/NixOS/nixos-hardware">nixos-hardware</a> - NixOS profiles to optimize settings for different hardware</li>
+        <li><a href="https://github.com/NixOS/rfcs">Nix RFCs</a> - the formal process for making substantial changes to the community</li>
+        <li><a href="https://github.com/NixOS/nixos-homepage">NixOS homepage</a> - the <a href="https://nixos.org">NixOS.org</a> website</li>
+        <li><a href="https://github.com/NixOS/hydra">hydra</a> - our continuous integration system</li>
+        <li><a href="https://github.com/NixOS/nixos-artwork">NixOS Artwork</a> - NixOS artwork</li>
+      </ul>
+    </section>
+    <section class="level1" aria-labelledby="continuous-integration-and-distribution">
+      <h1 id="continuous-integration-and-distribution">Continuous Integration and Distribution</h1>
+      <p>
+        Nixpkgs and NixOS are built and tested by our continuous integration
+        system, <a href="https://hydra.nixos.org/">Hydra</a>.
+      </p>
+      <ul>
+        <li><a href="https://hydra.nixos.org/jobset/nixos/trunk-combined">Continuous package builds for unstable/master</a></li>
+        <li><a href="https://hydra.nixos.org/jobset/nixos/release-24.11">Continuous package builds for the NixOS 24.11 release</a></li>
+        <li><a href="https://hydra.nixos.org/job/nixos/trunk-combined/tested#tabs-constituents">Tests for unstable/master</a></li>
+        <li><a href="https://hydra.nixos.org/job/nixos/release-24.11/tested#tabs-constituents">Tests for the NixOS 24.11 release</a></li>
+      </ul>
+      <p>
+        Artifacts successfully built with Hydra are published to cache at
+        <a href="https://cache.nixos.org/">https://cache.nixos.org/</a>. When successful build and test criteria are
+        met, the Nixpkgs expressions are distributed via <a href="https://nix.dev/manual/nix/stable/command-ref/nix-channel.html">Nix
+channels</a>.
+      </p>
+    </section>
+    <section class="level1" aria-labelledby="contributing">
+      <h1 id="contributing">Contributing</h1>
+      <p>
+        Nixpkgs is among the most active projects on GitHub. While thousands
+        of open issues and pull requests might seem a lot at first, it helps
+        consider it in the context of the scope of the project. Nixpkgs
+        describes how to build tens of thousands of pieces of software and implements a
+        Linux distribution. The <a href="https://github.com/NixOS/nixpkgs/pulse">GitHub Insights</a>
+        page gives a sense of the project activity.
+      </p>
+      <p>
+        Community contributions are always welcome through GitHub Issues and
+        Pull Requests.
+      </p>
+      <p>
+        For more information about contributing to the project, please visit
+        the <a href="CONTRIBUTING.md">contributing page</a>.
+      </p>
+    </section>
+    <section class="level1" aria-labelledby="donations">
+      <h1 id="donations">Donations</h1>
+      <p>
+        The infrastructure for NixOS and related projects is maintained by a
+        nonprofit organization, the <a href="https://nixos.org/nixos/foundation.html">NixOS
+Foundation</a>. To ensure the
+        continuity and expansion of the NixOS infrastructure, we are looking
+        for donations to our organization.
+      </p>
+      <p>You can donate to the NixOS foundation through <a href="https://nixos.org/donate.html">SEPA bank
+transfers</a> or by using Open Collective:</p>
+      <p><a href="https://opencollective.com/nixos#support"><img src="https://opencollective.com/nixos/tiers/supporter.svg?width=890"></a></p>
+    </section>
+    <section class="level1" aria-labelledby="license">
+      <h1 id="license">License</h1>
+      <p>Nixpkgs is licensed under the <a href="COPYING">MIT License</a>.</p>
+      <p>
+        Note: MIT license does not apply to the packages built by Nixpkgs,
+        merely to the files in this repository (the Nix expressions, build
+        scripts, NixOS modules, etc.). It also might not apply to patches
+        included in Nixpkgs, which may be derivative works of the packages to
+        which they apply. The aforementioned artifacts are all covered by the
+        licenses of the respective packages.
+      </p>
+    </section>
+  </body>
+</html>
